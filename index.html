@@ -11,130 +11,126 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <script
+      src="https://kit.fontawesome.com/400386b899.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>WeatherApp-week3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://csshake.surge.sh/csshake.min.css"
+    />
     <title>Vanilla Weather App</title>
   </head>
   <body>
-    <div id="root">
-      <div class="App">
-        <div class="container">
-          <div class="weather">
-            <form>
-              <div class="row">
-                <div class="col-9">
-                  <input
-                    type="search"
-                    placeholder="Enter a city..."
-                    class="form-control search-input"
-                  />
-                </div>
-                <div class="col-3 p-0">
-                  <input
-                    type="search"
-                    class="btn btn-primary w-100"
-                    value="Search"
-                  />
-                </div>
+    <div class="container">
+      <div class="shake-slow">
+        <h1>Vanilla Weather App</h1>
+      </div>
+      <div class="weather-card-body">
+        <form>
+          <div class="row">
+            <div class="col-9">
+              <input
+                type="Search"
+                placeholder="Enter a city..."
+                class="form-control search-input"
+              />
+            </div>
+              <div class="col-3 p-0">
+                <input
+                type="Submit"
+                class="btn btn-primary w-100"
+                value="Search"
+                />
               </div>
-            </form>
-            <div class="WeatherInfo">
-              <div class="row">
-                <div class="col-6">
-                  <h1>New York</h1>
-                  <ul>
-                    <li>
-                      <span> "Saturday" "21" ":" "23" </span>
-                      ", " "scatterd clouds"
-                    </li>
-                    <li>
-                      "Humidity: "
-                      <strong> "71" "%" </strong>
-                      ", Wind:" ><strong> "7.72" "km/h" </strong>
-                    </li>
-                  </ul>
-                </div>
+            </div>
+          </form>
+          <div class="WeatherInfo">
+            <div class="row">
+             <div class="col-6">
+                <h2>Miami, FL</h2>
+                <ul>
+                  <li class="current-date">Sunday, 05:00 pm</li>
+                  <li class="current-weather">Scatterd Clouds</li>
+                  <li class="current-humidity">
+                  Humidity: <strong>74%</strong>, Wind: <strong>13 mph</strong>
+                  </li>
+                </ul>
+              </div>
                 <div class="col-6">
                   <div class="temperature-container d-flex justify-content-end">
                     <canvas width="52" height="52"></canvas>
                     <div>
                       <span class="temperature">16</span>
                       <span class="unit">°F</span>
-                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="WeatherForecast row">
-              <div class="col">
-                <div class="WeatherForecastPreview">
-                  <div class="forecast-time">Sat</div>
-                  <canvas width="38" height="38"></canvas>
-                  <div class="forecast-temperature">
-                    <span class="forecast-temperature-max">17°</span>
-                    <span class="forecast-temperature-min">9°</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="WeatherForecastPreview">
-                  <div class="forecast-time">Sun</div>
-                  <canvas width="38" height="38"></canvas>
-                  <div class="forecast-temperature">
-                    <span class="forecast-temperature-max">16°</span>
-                    <span class="forecast-temperature-min">7°</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="WeatherForecastPreview">
-                  <div class="forecast-time">Mon</div>
-                  <canvas width="38" height="38"></canvas>
-                  <div class="forecast-temperature">
-                    <span class="forecast-temperature-max">14°</span>
-                    <span class="forecast-temperature-min">5°</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="WeatherForecastPreview">
-                  <div class="forecast-time">Tue</div>
-                  <canvas width="38" height="38"></canvas>
-                  <div class="forecast-temperature">
-                    <span class="forecast-temperature-max">13°</span>
-                    <span class="forecast-temperature-min">8°</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="WeatherForecastPreview">
-                  <div class="forecast-time">Wed</div>
-                  <canvas width="38" height="38"></canvas>
-                  <div class="forecast-temperature">
-                    <span class="forecast-temperature-max">7°</span>
-                    <span class="forecast-temperature-min">4°</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <footer>
-              This project was coded by Michelle Pruitt
-              <a
-                href="https://github.com/pruittme1/Vanilla-weather-app"
-                target="_blank"
-                rel="noopener noreferrer"
-                >open-sourced on GitHub</a
-              >
-              and
-              <a
-                href="https://elated-wozniak-a66a95.netlify.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >hosted on Netlify</a
-              >
-            </footer>
           </div>
-        </div>
-      </div>
-    </div>
+          <div class="WeatherForecast row">
+            <div class="col">
+              <div class="WeatherForecastPreview">
+                <div class="forecast-time">Mon</div>
+                  <canvas width="38" height="38"></canvas>
+                <div class="forecast-temperature">
+                  <span class="forecast-temperature-max">80°</span>
+                  <span class="forecast-temperature-min">71°</span>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="WeatherForecastPreview">
+                <div class="forecast-time">Tue</div>
+                  <canvas width="38" height="38"></canvas>
+                <div class="forecast-temperature">
+                  <span class="forecast-temperature-max">80°</span>
+                  <span class="forecast-temperature-min">71°</span>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="WeatherForecastPreview">
+                  <div class="forecast-time">Wed</div>
+                    <canvas width="38" height="38"></canvas>
+                  <div class="forecast-temperature">
+                    <span class="forecast-temperature-max">81°</span>
+                    <span class="forecast-temperature-min">71°</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+              <div class="WeatherForecastPreview">
+                  <div class="forecast-time">Thu</div>
+                    <canvas width="38" height="38"></canvas>
+                  <div class="forecast-temperature">
+                    <span class="forecast-temperature-max">81°</span>
+                    <span class="forecast-temperature-min">71°</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+              <div class="WeatherForecastPreview">
+                  <div class="forecast-time">Fri</div>
+                    <canvas width="38" height="38"></canvas>
+                  <div class="forecast-temperature">
+                    <span class="forecast-temperature-max">81°</span>
+                    <span class="forecast-temperature-min">71°</span>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <footer>
+            This project was coded by Michelle Pruitt and is <a href="https://github.com/pruittme1/Vanilla-weather-app" target="_blank" rel="noopener noreferrer">open-sourced on GitHub</a>, hosted on <a href="https://elated-wozniak-a66a95.netlify.app/" target="_blank" rel="noopener noreferrer">Netlify</a>.
+          </footer>
     <script src="src/app.js"></script>
   </body>
 </html>
