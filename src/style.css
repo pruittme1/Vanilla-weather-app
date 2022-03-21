@@ -1,5 +1,30 @@
 body {
-  background: #f9f7fe;
+  background: white;
+  margin-top: 10;
+  display: block;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: monospace;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color: hsl(300, 90%, 40%);
+  text-align: center;
+  line-height: 1.2;
+}
+
+h2 {
+  color: hsl(300, 90%, 40%);
+}
+
+.weather-body {
+  color: rgb(48, 47, 47);
+  background-color: rgb(250, 222, 242);
+  padding: 30px;
+  margin-top: 20px;
+  border-width: 2;
+  border-radius: 6px;
 }
 
 .App {
@@ -17,18 +42,15 @@ body {
   border-radius: 16px;
   box-shadow: 0px 30px 50px rgba(65, 50, 100, 0.08);
   padding: 40px;
-  color: rgb(135, 135, 135);
+  color: rgb(48, 47, 47);
 }
 
-.Weather .logo {
-  max-width: 150px;
-  display: block;
-}
-
-.Weather form {
-  margin-top: 40px;
-  border-bottom: 1px solid #f9f7fe;
-  padding-bottom: 30px;
+.form {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-bottom: 3px solid #34313a;
+  padding-bottom: 30;
+  padding-top: 40;
 }
 
 .Weather .search-input {
@@ -63,7 +85,6 @@ body {
   font-weight: bold;
   font-size: 38px;
   line-height: 48px;
-
   color: #272142;
 }
 
@@ -75,20 +96,20 @@ body {
 .Weather li {
   font-weight: 500;
   margin-bottom: 5px;
-  color: rgba(39, 33, 66, 0.4);
+  color: rgb(48, 47, 47);
   font-size: 16px;
   line-height: 20px;
   list-style: none;
 }
 
 .Weather li strong {
-  color: #f65282;
+  color: hsl(300, 90%, 40%);
   font-weight: normal;
 }
 
-.Weather .temperature {
+.temperature {
   font-weight: bold;
-  color: rgb(33, 33, 33);
+  color: hsl(300, 90%, 40%);
   margin-left: 5px;
   font-weight: 400;
   margin-left: 10px;
@@ -97,12 +118,12 @@ body {
   line-height: 1;
 }
 
-.Weather canvas {
+canvas {
   margin: 10px 0;
 }
 
-.Weather .unit {
-  color: rgb(33, 33, 33);
+.unit {
+  color: hsl(300, 90%, 40%);
   font-size: 28px;
   line-height: 36px;
   font-weight: normal;
@@ -119,10 +140,6 @@ body {
   color: rgba(39, 33, 66, 0.4);
 }
 
-.Weather footer a {
-  color: #885df1;
-}
-
 .WeatherForecast {
   text-align: center;
   margin: 40px 0;
@@ -130,18 +147,18 @@ body {
   padding-bottom: 50px;
 }
 
-.WeatherForecast .forecast-time {
+.forecast-time {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  color: rgba(39, 33, 66, 0.4);
+  color: rgb(48, 47, 47);
 }
 
 .WeatherForecast .forecast-temperature {
   font-style: normal;
   font-size: 18px;
   line-height: 1.5;
-  color: #f65282;
+  color: hsl(300, 90%, 40%);
   font-weight: bold;
 }
 
@@ -161,8 +178,4 @@ body {
 
 .WeatherInfo .temperature-container {
   margin-top: 30px;
-}
-
-h1 {
-  color: rgb(180, 125, 232);
 }
