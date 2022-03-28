@@ -1,28 +1,8 @@
-alert("hello lovely");
-
-export default function FormattedDate(props) {
-  let days = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-  ];
-  let day = days[props.date.getDay()];
-  let hours = props.date.getHours();
-  if (hours < 10) {
-    hours = `0${hours}`;
-  }
-
-  let minutes = props.date.getMinutes();
-  if (minutes < 10) {
-    minutes = `0${minutes}`;
-  }
-  return (
-    <span>
-      {day} {hours}:{minutes}
-    </span>
-  );
+function displayTemperature(response) {
+  console.log(response.data);
 }
+
+let apiKey = "87b178ac3ff18ae30998e0fe85f9d0ad";
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Miami&appid=${apiKey}&units=imperial`;
+
+axios.get(apiUrl).then(displayTemperature);
