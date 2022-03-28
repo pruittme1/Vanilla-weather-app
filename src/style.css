@@ -14,6 +14,21 @@ h1 {
   line-height: 1.2;
 }
 
+#temperature {
+  font-size: 60px;
+  color: #bf04c5;
+  font-weight: 300px;
+}
+
+#humidity {
+  color: #bf04c5;
+  font-weight: 100px;
+}
+
+#wind {
+  color: #bf04c5;
+  font-weight: 100px;
+}
 .current-temp-emoji {
   font-size: 70px;
 }
@@ -129,6 +144,7 @@ ul {
 li {
   font-weight: 500;
   margin-bottom: 5px;
+  text-transform: capitalize;
   color: rgb(48, 47, 47);
   font-size: 16px;
   line-height: 20px;
