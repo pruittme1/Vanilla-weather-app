@@ -36,20 +36,22 @@
         <h1>Vanilla Weather App</h1>
       </div>
       <div class="weather-body">
-        <form id="search-form">
+        <form id="search-form" class="mb-3">
           <div class="row">
             <div class="col-9">
               <input
-                type="Search"
+                type="search"
                 placeholder="Enter a city..."
-                class="form-control search-input"
+                class="form-control"
+                id="city-input"
+                autocomplete="off"
               />
             </div>
               <div class="col-3 p-0">
                 <input
-                type="Submit"
+                type="submit"
                 class="btn btn-primary w-100"
-                value="Search"
+                value="search"
                 />
               </div>
             </div>
@@ -58,7 +60,7 @@
             <div class="row">
              <div class="col-6">
                <div class="shake-slow">
-                <h2 id="city">Miami, FL</h2>
+                <h2 id="city"></h2>
                 </div>
                 <ul>
                   <li>Last updated: <span id="date"></span></li>
