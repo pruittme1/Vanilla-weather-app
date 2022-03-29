@@ -17,6 +17,7 @@ h1 {
 h2 {
   color: #bf04c5;
   font-size: 40px;
+  font-family: monospace;
 }
 
 li:first-letter {
