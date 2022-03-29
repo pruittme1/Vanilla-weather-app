@@ -61,10 +61,10 @@
                 <h2 id="city">Miami, FL</h2>
                 </div>
                 <ul>
-                  <li class="current-date">Sunday, 05:00 pm</li>
+                  <li>Last updated: <span id="date"></span></li>
                   <li id="description">Scatterd Clouds</li>
                   <li> Humidity: <span id="humidity"></span><strong>%</strong></li>
-                  <li> Wind: <span id="wind"></span><strong>mph</strong></li>
+                  <li> Wind: <span id="wind"></span><strong> mph</strong></li>
                 </ul>
               </div>
                 <div class="col-6">
@@ -72,7 +72,12 @@
                     <canvas width="52" height="52"></canvas>
                     <div class="shake-slow">
                     <div>
-                      <span class="current-temp-emoji">☀️</span>
+                      <img 
+                      src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+                      alt="clear"
+                      id="icon"
+                      class="float-left"
+                      />
                       <span id="temperature">16</span>
                       <span class="unit">°F</span>
                     </div>
