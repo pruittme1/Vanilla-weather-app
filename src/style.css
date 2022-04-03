@@ -45,6 +45,27 @@ li:first-letter {
   margin: 10px 0;
   padding-bottom: 30px;
 }
+
+#celsius-link {
+  color: #bf04c5;
+  cursor: default;
+  text-decoration: none;
+}
+
+#celsius-link:hover {
+  text-decoration: none;
+}
+
+.active {
+  color: #bf04c5;
+  cursor: default;
+  text-decoration: none;
+}
+
+.active:hover {
+  text-decoration: none;
+}
+
 .current-temp-emoji {
   font-size: 70px;
 }
